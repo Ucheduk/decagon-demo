@@ -1,8 +1,9 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins&display=swap');
+
 body {
   margin: 0;
-  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen',
-    'Ubuntu', 'Cantarell', 'Fira Sans', 'Droid Sans', 'Helvetica Neue',
-    sans-serif;
+  background-color: #262A41 !important;
+  font-family: 'Poppins', sans-serif !important;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
 }
@@ -10,4 +11,96 @@ body {
 code {
   font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
     monospace;
+}
+
+.heading h3 {
+  font-size: 40px;
+  color: #fff;
+  font-weight: 200;
+}
+
+.heading2 h3 {
+  font-size: 30px;
+  color: #262A41;
+  font-weight: 600;
+}
+
+.heading span {
+  font-weight: 600;
+}
+
+.form-group {
+  position: relative;
+  margin-top: 30px;
+}
+
+.form-group label[for='search'] {
+  position: absolute;
+  top: 25px;
+  left: 15px;
+}
+
+.form-group input[name='search'] {
+  padding-left: 40px;
+  width: 60%;
+  background-color: #3C3F54; 
+  height: 70px;
+  border-radius: 20px;
+  border: none;
+}
+
+.form-group input[name='search']::placeholder {
+  color: #fff;
+  font-size: 16px;
+}
+
+.options {
+  margin-top: 60px;
+}
+
+.options__heading {
+  font-weight: 600;
+  padding-bottom: 20px;
+}
+
+.options-group {
+  display: flex;
+  /* flex-direction: column; */
+  /* justify-content: space-between; */
+}
+
+.option {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  margin-right: 30px;
+}
+
+.btn {
+  height: 100px;
+  width: 100px;
+  background-color: #000;
+  border-radius: 30%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-size: 40px;
+  margin-bottom: 10px;
+}
+
+.btn:hover {
+  transform: scale(1.1);
+}
+
+.btn-all {
+  background-color: #F935A9;
+}
+
+.btn-male {
+  background-color: #30BBB5;
+}
+
+.btn-female {
+  background-color: #7946C1;
 }
